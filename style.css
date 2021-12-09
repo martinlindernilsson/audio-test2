@@ -1,0 +1,88 @@
+
+
+.page {
+	margin: auto;
+	width: 70%;
+}
+.center {
+	justify-content: center;
+	text-align: center;
+}
+
+.title {
+	font-size: 46pt;
+	text-align: center;
+}
+
+output {
+	font-size: 46pt;
+	position: relative;
+	left: 10px;
+	color: #a30505;
+}
+
+input {
+	width: 76%;
+}
+
+.startstop-button {
+
+	-webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+	
+
+    text-decoration: none;
+    color: initial;
+	background-color: #c7cac0;
+	width: 120px;
+	
+	font-size: 13pt;
+	border-radius: 10px;
+	padding: 7px 8px 7px 7px;
+	margin: 10px;
+	min-width: 100px;
+  	min-height: 30px;
+  	display: inline;
+}
+	
+
+p {
+	font-size: 15pt;
+	line-height:130%;
+}
+
+.instruction {
+	margin: auto;
+	width: 80%;
+}
+
+.icon {
+	width: 40px;
+}
+
+
+@media only screen and (max-width: 600px) and (orientation: portrait) { 
+	.startstop-button {
+		
+		width: 60%;
+		min-height: 80px;
+		font-size: 1.8em; 
+	}
+
+	p {
+		font-size: 13pt;
+		line-height:130%;
+	}
+
+	.title {
+		font-size: 28pt;
+		text-align: center;
+	}
+
+	.instruction {
+		margin: auto;
+		width: 100%;
+	}
+  }
+
