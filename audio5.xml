@@ -20,11 +20,11 @@
 
  
     <Mixer gain="$mix_a">
-        <AudioBufferSourceNode class="loop" src="audio/humorhimlenOff.m4a" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/humorhimlen10.m4a" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
     <Mixer gain="$mix_b">
-        <AudioBufferSourceNode class="loop" src="audio/humorhimlen16.m4a" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/humorhimlen12.m4a" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
     <Mixer gain="$mix_c">
@@ -32,11 +32,11 @@
     </Mixer>
 
     <Mixer gain="$mix_d">
-        <AudioBufferSourceNode class="loop" src="audio/humorhimlen12.m4a" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/humorhimlen16.m4a" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
     <Mixer gain="$mix_e">
-        <AudioBufferSourceNode class="loop" src="audio/humorhimlen10.m4a" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/humorhimlenOff.m4a" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
     <!--<Mixer>
