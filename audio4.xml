@@ -21,23 +21,23 @@
 
  
     <Mixer gain="$mix_a">
-        <AudioBufferSourceNode class="loop" src="audio/morgonpasset2_Off.m4a" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/p4extra_Off.m4a" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
     <Mixer gain="$mix_b">
-        <AudioBufferSourceNode class="loop" src="audio/morgonpasset2_16.m4a" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/p4extra_16.m4a" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
     <Mixer gain="$mix_c">
-        <AudioBufferSourceNode class="loop" src="audio/morgonpasset2_14.m4a" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/p4extra_14.m4a" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
     <Mixer gain="$mix_d">
-        <AudioBufferSourceNode class="loop" src="audio/morgonpasset2_12.m4a" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/p4extra_12.m4a" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
     <Mixer gain="$mix_e">
-        <AudioBufferSourceNode class="loop" src="audio/morgonpasset2_10.m4a" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/p4extra_10.m4a" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
     <Mixer>

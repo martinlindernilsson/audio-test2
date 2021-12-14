@@ -16,11 +16,11 @@
     <var name="mix_b" value="$mix" default="5" mapin="1,5" mapout="0,1" curve="1"></var>
 
     <Mixer gain="$mix_a">
-        <AudioBufferSourceNode class="loop" src="audio/nyheterOrig.m4a" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/p4vaster2Orig.m4a" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
     <Mixer gain="$mix_b">
-        <AudioBufferSourceNode class="loop" src="audio/nyheterBSS.m4a" loop="true"></AudioBufferSourceNode>
+        <AudioBufferSourceNode class="loop" src="audio/p4vaster2BSS.m4a" loop="true"></AudioBufferSourceNode>
     </Mixer>
 
     <!--<Mixer>
