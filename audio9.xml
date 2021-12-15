@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audio version="1.0" timeUnit="ms" gain="0dB">
+
+   
+    <!-- This is a more flexible solution where the slider sets the variable $mix and the
+        the two <var> elements sets is values and maps them using mapin and mapout.
+        attributes. A <var> element also have possibilities to define default values, 
+        complex expressions for the value attribute, multiple mapin, and mapout values
+        conversions from MIDI notes to frequencies, interpolation curves and more. See
+        https://github.com/hanslindetorp/WebAudioXML/wiki/Parameter-Mapping for more 
+        details. -->
+
+    <!-- If you would like to experiment with this configuration, please remove the 
+        class="loop" for the AudioBufferSourceNodes above and add it to the once below -->
+    
+    <var name="mix_a" value="$mix" default="0" mapin="1,2,5" mapout="1,0,0" curve="1"></var>
+    <var name="mix_b" value="$mix" default="0" mapin="1,2,3,5" mapout="0,1,0,0" curve="1"></var>
+    <var name="mix_c" value="$mix" default="0" mapin="1,2,3,4,5" mapout="0,0,1,0,0" curve="1"></var>
+    <var name="mix_d" value="$mix" default="0" mapin="1,3,4,5" mapout="0,0,1,0" curve="1"></var>
+    <var name="mix_e" value="$mix" default="0" mapin="1,4,5" mapout="0,0,1" curve="1"></var>
+
+ 
+    <Mixer gain="$mix_a">
+        <AudioBufferSourceNode class="loop" src="audio/musikhjalpen_10.m4a" loop="true"></AudioBufferSourceNode>
+    </Mixer>
+
+    <Mixer gain="$mix_b">
+        <AudioBufferSourceNode class="loop" src="audio/musikhjalpen_12.m4a" loop="true"></AudioBufferSourceNode>
+    </Mixer>
+
+    <Mixer gain="$mix_c">
+        <AudioBufferSourceNode class="loop" src="audio/musikhjalpen_14.m4a" loop="true"></AudioBufferSourceNode>
+    </Mixer>
+
+    <Mixer gain="$mix_d">
+        <AudioBufferSourceNode class="loop" src="audio/musikhjalpen_16.m4a" loop="true"></AudioBufferSourceNode>
+    </Mixer>
+
+    <Mixer gain="$mix_e">
+        <AudioBufferSourceNode class="loop" src="audio/musikhjalpen_Off.m4a" loop="true"></AudioBufferSourceNode>
+    </Mixer>
+
+    <!--<Mixer>
+        <AudioBufferSourceNode class="loop" src="audio/brus34.m4a" loop="true"></AudioBufferSourceNode>
+    </Mixer>-->
+
+
+</Audio>

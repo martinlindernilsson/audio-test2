@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<title>Lyssningstest</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<!--
+		<script>
+			// Här bestäms vilken sida som visas först
+			window.addEventListener("load", () => location.href = "#page1");
+		</script>
+		-->
+		<script>
+			function setValue(id,newvalue) {
+  				var s= document.getElementById(id);
+  				s.value = newvalue;
+			}
+			window.onload=function() {
+  				setValue("slider-range", Math.floor(Math.random() * 5) + 1);
+			}
+		</script>
+	</head>
+
+
+	<body>
+		<div class="page">
+			<br>
+			<div class="title">Test 10</div>
+			<div class="instruction">
+				<p>Tryck på "START" för att spela ljudklippet.</p>
+				<p>Använd sedan skjutreglaget och hitta en position (1-5), där du kan uppfatta dialogen så tydligt som möjligt och
+					samtidigt behålla en sammantaget godtagbar lyssningsupplevelse.</p>
+				<p>Ta hela ljudklippet i beaktande när du väljer den position på reglaget du föredrar.</p>
+				<br>
+			</div>
+			
+			<div class="center">
+				<player>
+					
+					<input id="slider-range" type="range" min="1" max="5" data-waxml-target="$mix" oninput="this.nextElementSibling.value = this.value"/>
+					<output></output>
+					
+					<br>
+					<button class="startstop-button" data-waxml-click-start=".loop">START</button>
+					<button class="startstop-button" data-waxml-click-stop=".loop">STOP</button>
+					
+				</player>
+			</div>
+			<br>
+			
+			<div class="instruction">
+				<p>När du bestämt en position, fyll i ditt resultat (nummer 1-5 i rött) i Google-formuläret och tryck "Nästa".</p>
+			</div>
+
+			<div class="center">
+				<button class="startstop-button" onclick="window.location.href='done.html';">Nästa</button>
+			</div>
+		</div>	
+
+		<script src="plugins/WebAudioXML.js" data-source="audio9.xml"></script>
+
+	</body>
+</html>
